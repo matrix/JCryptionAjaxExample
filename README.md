@@ -42,13 +42,29 @@ Press Ctrl-C to quit.
 
 ### jCryption v2.x
 If you want some fresh keys you can use the **generator.php** but you need also the following packages:
+#### Linux (apt-get)
 - php7.0
 - php7.0-gmp
 - php7.0-bcmath
+#### OSX (brew)
+- php71
+- php71-gmp
+
 Then you can use the following command:
+#### Linux
 ```sh
 $ php7.0 generator.php
 ```
+#### OSX
+```sh
+$ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+$ php -v
+PHP 7.1.6 (cli) (built: Jun 23 2017 08:42:20) ( NTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
+$ php generator.php
+```
+
 The file named **100_1024_keys.inc.php**, present in **v2/www/include** directory, will be replaced with a fresh one.
 
 #### Setup a web server with PHP and jCryption v2.x
