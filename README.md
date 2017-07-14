@@ -50,13 +50,31 @@ If you want some fresh keys you can use the **generator.php** but you need also 
 - php71
 - php71-gmp
 
-Then you can use the following command:
+You can use the following command:
 #### Linux
 ```sh
+$ apt-get install php7.0 php7.0-gmp php7.0-bcmath
 $ php7.0 generator.php
 ```
 #### OSX
 ```sh
+$ brew tap homebrew/homebrew-php
+==> Tapping homebrew/php
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-php'...
+remote: Counting objects: 757, done.
+remote: Compressing objects: 100% (525/525), done.
+remote: Total 757 (delta 496), reused 296 (delta 223), pack-reused 0
+Receiving objects: 100% (757/757), 309.13 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (496/496), done.
+Tapped 723 formulae (772 files, 1.4MB)
+$ brew install php71
+==> Installing php71 from homebrew/php
+==> Installing dependencies for homebrew/php/php71: libpng, freetype, icu4c, jpeg, unixodbc
+==> Installing homebrew/php/php71 dependency: libpng
+[...]
+$ brew install php71-gmp
+==> Installing php71-gmp from homebrew/php
+[...]
 $ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 $ php -v
 PHP 7.1.6 (cli) (built: Jun 23 2017 08:42:20) ( NTS )
