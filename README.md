@@ -1,12 +1,12 @@
 # JCryptionAjaxExample
-Simple AJAX website to testing **jCryption Handler** Burp Suite Extender.
+Simple AJAX and PHP Web App to testing **jCryption-Handler** Burp Suite Extension.
 <br>
 <br>
 You can find the extension source code here
 <br>
 https://github.com/matrix/Burp-JCryption-Handler
 <br>
-or directly inside Burp Suite Free/Professional (BApp Store section).
+or you can load it directly from Burp Suite Free/Professional (BApp Store section).
 
 **Note for Burp Suite users**:
 <br>
