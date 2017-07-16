@@ -85,7 +85,7 @@ Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
 $ php generator.php
 ```
 
-The file named **100_1024_keys.inc.php**, present in **(v1|v2)/www/include** directories, will be replaced with a fresh one.
+The file named **100_1024_keys.inc.php**, present in **rsa** directory, will be replaced with a fresh one.
 
 #### Setup a web server with PHP and jCryption v2.x
 ```sh

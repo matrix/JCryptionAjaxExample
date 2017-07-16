@@ -75,7 +75,7 @@
 
 	if(isset($_GET["generateKeypair"]))
 	{
-		require_once 'include/100_1024_keys.inc.php';
+		require_once '../../rsa/100_1024_keys.inc.php';
 		$keys = $arrKeys[mt_rand(0, 100)];
 
 		$_SESSION["e"] = array("int" => $keys["e"], "hex" => $jCryption->dec2string($keys["e"],16));
