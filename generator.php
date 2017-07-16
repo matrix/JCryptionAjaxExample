@@ -19,3 +19,4 @@ $file[] = var_export($arrKeyPairs, true);
 $file[] = ';';
 
 file_put_contents("v2/www/include/" . $numberOfPairs . "_". $keyLength . "_keys.inc.php", implode("\n", $file));
+file_put_contents("v1/www/include/" . $numberOfPairs . "_". $keyLength . "_keys.inc.php", implode("\n", $file));

@@ -212,8 +212,8 @@
 	$.jCryption.defaultOptions = {
 		submitElement: false,
 		submitEvent: "click",
-		getKeysURL: "actions.php?generateKeypair=true",
-		handshakeURL: "actions.php?handshake=true",
+		getKeysURL: "main.php?generateKeypair=true",
+		handshakeURL: "main.php?handshake=true",
 		beforeEncryption: function() { return true },
 		postVariable: "jCryption",
 		formFieldSelector: ":input"
