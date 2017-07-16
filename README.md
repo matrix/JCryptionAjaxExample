@@ -36,13 +36,13 @@ writing RSA key
 ```sh
 $ cd v3/www/
 $ php -S 127.0.0.1:8888
-PHP 5.5.38 Development Server started at Thu Jul 13 21:10:17 2017
+PHP 7.1.6 Development Server started at Sun Jul 16 09:19:46 2017
 Listening on http://127.0.0.1:8888
 Document root is [PATH TO]/JCryptionAjaxExample/v3/www
 Press Ctrl-C to quit.
 ```
 
-### jCryption v2.x
+### jCryption v2.x / v1.x
 If you want some fresh keys you can use the **generator.php** but you need also the following packages:
 #### Linux (apt-get)
 - php7.0
@@ -85,15 +85,25 @@ Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
 $ php generator.php
 ```
 
-The file named **100_1024_keys.inc.php**, present in **v2/www/include** directory, will be replaced with a fresh one.
+The file named **100_1024_keys.inc.php**, present in **(v1|v2)/www/include** directories, will be replaced with a fresh one.
 
 #### Setup a web server with PHP and jCryption v2.x
 ```sh
 $ cd v2/www/
 $ php -S 127.0.0.1:8888
-PHP 5.5.38 Development Server started at Fri Jul 14 19:03:54 2017
+PHP 7.1.6 Development Server started at Sun Jul 16 09:18:58 2017
 Listening on http://127.0.0.1:8888
 Document root is [PATH TO]/JCryptionAjaxExample/v2/www
+Press Ctrl-C to quit.
+```
+
+#### Setup a web server with PHP and jCryption v1.x
+```sh
+$ cd v1/www/
+$ php -S 127.0.0.1:8888
+PHP 7.1.6 Development Server started at Sun Jul 16 09:18:34 2017
+Listening on http://127.0.0.1:8888
+Document root is [PATH TO]/JCryptionAjaxExample/v1/www
 Press Ctrl-C to quit.
 ```
 
