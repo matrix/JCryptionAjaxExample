@@ -18,4 +18,6 @@ $file[] = '$arrKeys = ';
 $file[] = var_export($arrKeyPairs, true);
 $file[] = ';';
 
+if (!file_exists("rsa")) mkdir("rsa");
+
 file_put_contents("rsa/" . $numberOfPairs . "_". $keyLength . "_keys.inc.php", implode("\n", $file));
